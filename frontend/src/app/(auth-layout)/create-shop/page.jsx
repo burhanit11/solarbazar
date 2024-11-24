@@ -4,6 +4,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import styles from "@/styles/styles";
 import { RxAvatar } from "react-icons/rx";
 import Link from "next/link";
+import Image from "next/image";
 
 const CreateShop = () => {
   const [email, setEmail] = useState("");
@@ -202,8 +203,10 @@ const CreateShop = () => {
               <div className="mt-2 flex items-center">
                 <span className="inline-block h-8 w-8 rounded-full overflow-hidden">
                   {avatar ? (
-                    <img
+                    <Image
                       src={avatar}
+                      height={50}
+                      width={50}
                       alt="avatar"
                       className="h-full w-full object-cover rounded-full"
                     />
