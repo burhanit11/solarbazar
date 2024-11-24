@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --yellow: "#ffbb38",
+  --lightBlue: "#008ecc",
+  --bgHeadColor: "f6f6f5",
+  --bgColor: "d3cfcd",
+} */
+
+.btn {
+  background-color: #ffbb38;
+  color: black;
+  font-weight: 500;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 5px;
+}
