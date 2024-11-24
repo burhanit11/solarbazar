@@ -592,6 +592,35 @@ export const productData = [
   },
 ];
 
+// Sponsored data
+export const sponsoredData = [
+  {
+    id: 1,
+    logo_Url: "https://tashheer.com/wp-content/uploads/2024/01/alpha-solar.png",
+  },
+  {
+    id: 2,
+    logo_Url:
+      "https://ccsolar.co.uk/wp-content/uploads/2023/01/CCSolarLogoSquare.webp",
+  },
+  {
+    id: 3,
+    logo_Url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ3yXf_yv9c82NaXiHa9icDbmhlJMlNhg9AyHx2UIo5nQJsDhvCSjuisZbEDeWomDC1oY&usqp=CAU",
+  },
+  {
+    id: 4,
+    logo_Url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoGYtO5TgFA2-nJdVWu-Xv22cuKSksSkjYw&s",
+  },
+  {
+    id: 5,
+    logo_Url:
+      "https://seeklogo.com/images/N/narada-records-logo-4A23025296-seeklogo.com.png",
+  },
+];
+
+// footer data
 export const footerProductLinks = [
   {
     name: "About us",
