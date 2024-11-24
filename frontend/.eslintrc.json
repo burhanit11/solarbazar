@@ -1,7 +1,14 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:next/recommended" // Add this line to include Next.js rules
+  ],
+  "plugins": [
+    "react",
+    "next" // Ensure this is listed here
+  ],
   "rules": {
-    "react/no-unescaped-entities": "error",
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "error" // Ensure the rule is enabled or adjust as needed
   }
 }
