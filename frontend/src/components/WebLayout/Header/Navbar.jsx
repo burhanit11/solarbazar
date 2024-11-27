@@ -13,7 +13,7 @@ const Navbar = ({ active }) => {
               href={i.url}
               className={`${
                 active === index + 1
-                  ? "text-yellow font-bold"
+                  ? "text-[#fff] "
                   : "text-[#fff] 800px:text-[#fff]"
               }   800px:pb-0 font-[500] px-6 cursor-pointer}`}
             >
