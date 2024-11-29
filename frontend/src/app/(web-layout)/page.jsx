@@ -10,7 +10,7 @@ const WebLayout = () => {
   return (
     <>
       <Hero />
-      <Container>
+      <Container maxWidth="xl">
         <Categories />
         <BestDeals />
         <FeaturedProduct />

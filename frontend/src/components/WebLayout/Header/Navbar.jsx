@@ -1,23 +1,30 @@
-import { navItems } from "@/static/data";
+import React, { useEffect } from "react";
 import styles from "@/styles/styles";
+import { navItems } from "@/routes/routes";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = ({ active }) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    console.log("Route changed:", router.pathname);
+    // Trigger updates based on route changes
+  }, [router.pathname]);
   return (
-    <div className={`flex items-center 800px:${styles.noramlFlex}`}>
+    <div className={`md:flex xs:block `}>
       {navItems &&
-        navItems.map((i, index) => (
-          <div key={index}>
+        navItems.map((item, index) => (
+          <div key={index} className="xs:pb-3 md:pb-0">
             <Link
-              href={i.url}
+              href={item.url}
               className={`${
                 active === index + 1
-                  ? "text-[#fff] "
-                  : "text-[#fff] 800px:text-[#fff]"
-              }   800px:pb-0 font-[500] px-6 cursor-pointer}`}
+                  ? "text-[#ffbb38] font-[500]"
+                  : "md:text-white xs:text-black"
+              }  font-[500] px-2 cursor-pointer}`}
             >
-              {i.title}
+              {item.title}
             </Link>
           </div>
         ))}

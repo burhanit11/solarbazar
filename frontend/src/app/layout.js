@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import { projectName } from "@/theme/theme-congif";
 import { Poppins } from "next/font/google";
 import Providers from "@/components/providers/Providers";

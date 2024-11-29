@@ -4,7 +4,7 @@ import Header from "@/components/WebLayout/Header/Header";
 
 export default function WebLayout({ children }) {
   return (
-    <div className="bg-bgColor">
+    <div className="bg-bgColor ">
       <Header activeHeading={1} />
       {children}
       <Footer />

@@ -1,6 +1,6 @@
 "use client";
 import styles from "@/styles/styles";
-import ProductCard from "@/components/WebLayout/ProductCard/ProductCard";
+import ProductCard from "@/components/WebLayout/productCard/ProductCard";
 import { productData } from "@/static/data";
 
 const Products = () => {
