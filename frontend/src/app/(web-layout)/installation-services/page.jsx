@@ -1,10 +1,8 @@
 "use client";
 import styles from "@/styles/styles";
-import ProductCard from "@/components/WebLayout/productCard/ProductCard";
-import { productData } from "@/static/data";
 import { AiOutlineSearch } from "react-icons/ai";
 
-const Products = () => {
+const InstallationServices = () => {
   return (
     <div className="md:flex xs:block z-0 ">
       <div className="md:w-[20%] xs:w-full relative bg-white h-[100vh] px-5 rounded-t-lg md:fixed ">
@@ -13,25 +11,12 @@ const Products = () => {
         <div className="w-full my-5 relative">
           <input
             type="text"
-            placeholder="Search Product..."
+            placeholder="Installation Services..."
             className="h-[40px] w-full px-2 border-[#ffbb38] border-[2px] rounded-md"
           />
           <AiOutlineSearch
             size={30}
             className="absolute right-2 top-1.5 cursor-pointer"
-          />
-        </div>
-        <h2 className="text-lg  font-medium  pt-5">Filter by price</h2>
-        <div className="w-full flex gap-3 mx-auto relative   my-5">
-          <input
-            type="number"
-            placeholder="min"
-            className="h-[40px] w-full px-2 border-[#ffbb38] border-[2px] rounded-md"
-          />
-          <input
-            type="number"
-            placeholder="max"
-            className="h-[40px] w-full px-2 border-[#ffbb38] border-[2px] rounded-md"
           />
         </div>
         <h2 className="text-lg font-medium ">Where</h2>
@@ -48,19 +33,14 @@ const Products = () => {
         </div>
         <button className="btn w-full">Search</button>
       </div>
-      <div className="md:ml-[20%] md:w-[80%] xs:w-full">
+      <div className="md:ml-[20%] md:w-[80%] xs:w-full h-[100vh]">
         <div className={`p-4 ${styles.section}`}>
           <h2
             className={`${styles.heading} py-10 text-center text-[25px] font-[500] border-b `}
           >
-            Related Product
+            Installation Services
           </h2>
-          <div className="grid grid-cols-1 gap-[20px] mt-10 md:grid-cols-2 md:gap-[25px] lg:grid-cols-4 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12">
-            {productData &&
-              productData.map((i, index) => (
-                <ProductCard data={i} key={index} />
-              ))}
-          </div>
+          <div className="grid grid-cols-1 gap-[20px] mt-10 md:grid-cols-2 md:gap-[25px] lg:grid-cols-4 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12"></div>
         </div>
       </div>
       {/* {productData ? (
@@ -82,4 +62,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default InstallationServices;

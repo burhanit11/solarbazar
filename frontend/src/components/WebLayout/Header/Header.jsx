@@ -58,7 +58,7 @@ const Header = ({ activeHeading }) => {
       <div className="xs:hidden md:flex md:h-[50px] md:py-12  md:flex items-center justify-between">
         <div>
           <Link href="/">
-            <h1 className="text-5xl font-bold ">
+            <h1 className="text-5xl font-bold text-[#2ecc71] ">
               Solar<span className="text-primary">Bazar</span>
             </h1>
           </Link>

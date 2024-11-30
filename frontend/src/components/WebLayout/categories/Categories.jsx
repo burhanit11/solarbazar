@@ -102,12 +102,12 @@ const Categories = () => {
                   className="w-[50%] h-[50%] items-center object-cover"
                 />
               </div>
-              <h5
-                className={`text-[18px] text-center leading-[1.3] text-blue-600 py-3`}
-              >
-                {item.title}
-              </h5>
             </Paper>
+            <h5
+              className={`text-[18px] text-center leading-[1.3] text-blue-600 py-3`}
+            >
+              {item.title}
+            </h5>
           </Grid>
         ))}
       </Grid>

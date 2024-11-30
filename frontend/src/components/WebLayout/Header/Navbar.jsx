@@ -1,28 +1,28 @@
 import React, { useEffect } from "react";
-import styles from "@/styles/styles";
 import { navItems } from "@/routes/routes";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = ({ active }) => {
   const router = useRouter();
+  const pathname = usePathname();
 
-  useEffect(() => {
-    console.log("Route changed:", router.pathname);
-    // Trigger updates based on route changes
-  }, [router.pathname]);
+  const isActive = (path) => router.pathname === path;
+
+  console.log(isActive, "????????");
   return (
     <div className={`md:flex xs:block `}>
       {navItems &&
         navItems.map((item, index) => (
           <div key={index} className="xs:pb-3 md:pb-0">
+            {console.log(active + 1, index, "Ac>>>>>>>>")}
             <Link
               href={item.url}
               className={`${
-                active === index + 1
-                  ? "text-[#ffbb38] font-[500]"
-                  : "md:text-white xs:text-black"
-              }  font-[500] px-2 cursor-pointer}`}
+                isActive === true
+                  ? "text-[#ffbb38] font-[400]"
+                  : "md:text-white font-[400] xs:text-black"
+              }  font-[400] px-2 cursor-pointer}`}
             >
               {item.title}
             </Link>

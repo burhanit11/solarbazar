@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#000] text-white">
+    <div className="bg-[#000] text-white z-10 absolute">
       <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-secondary  py-6">
         <h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
           <span className="text-primary font-semibold">Subscribe</span> us to
