@@ -27,7 +27,6 @@ const Header = ({ activeHeading }) => {
   const [openCart, setOpenCart] = useState(false);
   const [openWishlist, setOpenWishlist] = useState(false);
 
-  const router = useRouter();
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 70) {
@@ -50,12 +49,12 @@ const Header = ({ activeHeading }) => {
     setSearchData(filteredProducts);
   };
 
-  useEffect(() => {
-    console.log("Route changed:", router.pathname);
-    // Trigger updates based on route changes
-    setOpen(false);
-  }, [router.pathname]);
-  console.log(router.pathname, "Open");
+  // useEffect(() => {
+  //   console.log("Route changed:", router.pathname);
+  //   // Trigger updates based on route changes
+  //   setOpen(false);
+  // }, [router.pathname]);
+  // console.log(router.pathname, "Open");
 
   return (
     <>

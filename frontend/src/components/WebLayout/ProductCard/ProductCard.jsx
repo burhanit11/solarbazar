@@ -20,15 +20,16 @@ const ProductCard = ({ data, isEvent }) => {
       <div className="w-full h-[370px] bg-white rounded-lg shadow-sm p-3 relative cursor-pointer">
         <div className="flex justify-end"></div>
         <Link
-          href={`${
-            isEvent === true
-              ? `/product/${data._id}?isEvent=true`
-              : `/product/${data._id}`
-          }`}
+          href={"/"}
+          // href={`${
+          //   isEvent === true
+          //     ? `/product/${data._id}?isEvent=true`
+          //     : `/product/${data._id}`
+          // }`}
         >
           <img
             src={`${data.image_Url && data.image_Url[0]?.url}`}
-            alt=""
+            alt="image"
             className="w-full h-[170px] object-contain"
           />
         </Link>
@@ -80,7 +81,7 @@ const ProductCard = ({ data, isEvent }) => {
             <AiOutlineHeart
               size={22}
               className="cursor-pointer absolute right-2 top-5"
-              onClick={() => addToWishlistHandler(data)}
+              // onClick={() => addToWishlistHandler(data)}
               color={click ? "red" : "#333"}
               title="Add to wishlist"
             />
@@ -95,7 +96,7 @@ const ProductCard = ({ data, isEvent }) => {
           <AiOutlineShoppingCart
             size={25}
             className="cursor-pointer absolute right-2 top-24"
-            onClick={() => addToCartHandler(data._id)}
+            // onClick={() => addToCartHandler(data._id)}
             color="#444"
             title="Add to cart"
           />

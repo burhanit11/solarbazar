@@ -59,15 +59,15 @@ const ProductDetailsCard = ({ setOpen, data }) => {
   //   }
   // }, [wishlist]);
 
-  const removeFromWishlistHandler = (data) => {
-    setClick(!click);
-    dispatch(removeFromWishlist(data));
-  };
+  // const removeFromWishlistHandler = (data) => {
+  //   setClick(!click);
+  //   dispatch(removeFromWishlist(data));
+  // };
 
-  const addToWishlistHandler = (data) => {
-    setClick(!click);
-    dispatch(addToWishlist(data));
-  };
+  // const addToWishlistHandler = (data) => {
+  //   setClick(!click);
+  //   dispatch(addToWishlist(data));
+  // };
 
   return (
     <div className="bg-[#fff]">
@@ -105,7 +105,7 @@ const ProductDetailsCard = ({ setOpen, data }) => {
                 </div>
                 <div
                   className={`${styles.button} bg-[#000] mt-4 rounded-[4px] h-11`}
-                  onClick={handleMessageSubmit}
+                  // onClick={handleMessageSubmit}
                 >
                   <span className="text-[#fff] flex items-center">
                     Send Message <AiOutlineMessage className="ml-1" />
@@ -151,7 +151,7 @@ const ProductDetailsCard = ({ setOpen, data }) => {
                       <AiFillHeart
                         size={30}
                         className="cursor-pointer"
-                        onClick={() => removeFromWishlistHandler(data)}
+                        // onClick={() => removeFromWishlistHandler(data)}
                         color={click ? "red" : "#333"}
                         title="Remove from wishlist"
                       />
@@ -159,7 +159,7 @@ const ProductDetailsCard = ({ setOpen, data }) => {
                       <AiOutlineHeart
                         size={30}
                         className="cursor-pointer"
-                        onClick={() => addToWishlistHandler(data)}
+                        // onClick={() => addToWishlistHandler(data)}
                         title="Add to wishlist"
                       />
                     )}

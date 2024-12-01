@@ -494,7 +494,7 @@ export const invertersData = [
   },
 ];
 
-// better
+// better data
 export const batteriesData = [
   {
     id: 1,
