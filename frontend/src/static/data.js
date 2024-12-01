@@ -1,3 +1,9 @@
+// const heroData = [
+//   {
+//     url: "https://www.elecnonewenergy.com/wp-content/themes/elecnopcwp/images/probanner.png",
+//   },
+// ];
+
 // branding data
 export const brandingData = [
   {
@@ -234,6 +240,377 @@ export const categoriesData = [
     subTitle: "",
     image_Url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQctyU36uJW10fvTSnleIk0LXISHkx2kRI0ZNUCtYGYcJqirsBKffaOIihHucTN1NkvZuE&usqp=CAU",
+  },
+];
+
+//  solar panel data
+export const solarPanelData = [
+  {
+    id: 1,
+    title: "A grade Solar Panel ",
+    des: "A-grade solar panel is a solar panel that is of the highest quality, with no visible defects and excellent performance. They are made with high-purity silicon and are known for their efficiency, reliability, and longevity. A-grade solar panels are often used in ground power stations, distributed power stations, and household systems.",
+    image: [
+      {
+        id: 1,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+      {
+        id: 2,
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzgwwDtcEuaMvClK6GCrgj7V4pNmtlE9tzNw&s",
+      },
+      {
+        id: 3,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "B grade solar panel",
+    des: "B Grade solar cells are solar cells that contain a visual flaw that does not affect the power, their price is a little lower than A Grade cells. C Grade solar cells are those with a flaw that affects the power output, so the output power is somehow lower than A and B Grade cells, and the price is lowest.",
+
+    image: [
+      {
+        id: 1,
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzgwwDtcEuaMvClK6GCrgj7V4pNmtlE9tzNw&s",
+      },
+      {
+        id: 2,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+      {
+        id: 3,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "C grade solar panel",
+    des: "A C-grade solar panel is a solar cell with defects that affect its performance and energy production. They are usually cheaper than A- or B-grade solar panels, but have a lower efficiency and are often only used in low-voltage systems",
+
+    image: [
+      {
+        id: 1,
+        url: "./images/DALL·E 2024-11-30 22.05.57 - A detailed image of a low-grade solar panel, often referred to as a C-grade panel. The panel appears slightly worn or substandard, with visible imperf.webp",
+      },
+      {
+        id: 2,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+      {
+        id: 3,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "D grade solar panel",
+    des: "A grade D solar panel is a broken solar panel that is considered unusable and has no power output. Grade D solar panels are the lowest possible grade and have severe damag",
+
+    image: [
+      {
+        id: 1,
+        url: "https://solardropshipping.com/_next/image?url=https%3A%2F%2Ffs.solardropshipping.com%2Fuploads%2Fproduct%2Fproduct-photos%2F3623%2Fproduct-photos-3623-1.jpg&w=1920&q=75",
+      },
+      {
+        id: 2,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+      {
+        id: 3,
+        url: "https://sinovoltaics.com/wp-content/upload_folders/sinovoltaics.com/2013/09/Grade-A-solar-cell.jpg",
+      },
+    ],
+  },
+];
+
+// cell data
+export const cellData = [
+  {
+    id: 1,
+    title: "lethium battery",
+    des: "A lithium-ion or Li-ion battery is a type of rechargeable battery that uses the reversible intercalation of Li+ ions into electronically conducting solids to store energy. In comparison with other commercial rechargeable batteries, Li-ion batteries are characterized by higher specific energy, higher energy density, higher energy efficiency, a longer cycle life, and a longer calendar life",
+
+    image: [
+      {
+        id: 1,
+        url: "https://sc04.alicdn.com/kf/H6501d1644e494671ac558531ad0bc6b6K.png",
+      },
+      {
+        id: 2,
+        url: "https://sc04.alicdn.com/kf/H6501d1644e494671ac558531ad0bc6b6K.png",
+      },
+      {
+        id: 3,
+        url: "https://sc04.alicdn.com/kf/H6501d1644e494671ac558531ad0bc6b6K.png",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Lithium Iron Phosphate.",
+    des: "Lithium iron phosphate batteries have low resistance qualities, which increases their safety and stability as a power source. They are also extremely durable and boast a longer life than other types of lithium-ion batteries, making them a cost-effective option for many. You will typically find them used in electric vehicles and bikes, as well as other applications that require a long lifecycle. ",
+    image: [
+      {
+        id: 1,
+        url: "https://m.media-amazon.com/images/I/61LsXs0zX5L._AC_SL1500_.jpg",
+      },
+      {
+        id: 2,
+        url: "https://m.media-amazon.com/images/I/61LsXs0zX5L._AC_SL1500_.jpg",
+      },
+      {
+        id: 3,
+        url: "https://m.media-amazon.com/images/I/61LsXs0zX5L._AC_SL1500_.jpg",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Lithium Titanate",
+    des: "Comprising superior nanotechnology, lithium titanate batteries boast a rapid recharge time and they’re a popular option in a variety of applications. For instance, they’re useful in electric vehicles and bicycles, and it is being earmarked as the ideal solution for electric buses and other means of electric public transport. They’re equally as useful for military and aerospace applications, and can efficiently store wind and solar energy. ",
+
+    image: [
+      {
+        id: 1,
+        url: "https://cdn11.bigcommerce.com/s-xjpg4jbhzd/images/stencil/1280x1280/products/26499/55922/XV12002__73977.1614799850.jpg?c=2",
+      },
+      {
+        id: 2,
+        url: "https://cdn11.bigcommerce.com/s-xjpg4jbhzd/images/stencil/1280x1280/products/26499/55922/XV12002__73977.1614799850.jpg?c=2",
+      },
+      {
+        id: 3,
+        url: "https://cdn11.bigcommerce.com/s-xjpg4jbhzd/images/stencil/1280x1280/products/26499/55922/XV12002__73977.1614799850.jpg?c=2",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Lithium Manganese Oxide",
+    des: "They are known to be stable at high temperatures and are safer than other types of lithium-ion battery. Lithium manganese oxide batteries are often used to power medical equipment, electric motorcycles, laptop computers, and electric vehicles. ",
+
+    image: [
+      {
+        id: 1,
+        url: "https://www.enix-power-solutions.com/wp-content/uploads/2022/03/Lithium-Manganese_Batteries_smaller.jpg",
+      },
+      {
+        id: 2,
+        url: "https://www.enix-power-solutions.com/wp-content/uploads/2022/03/Lithium-Manganese_Batteries_smaller.jpg",
+      },
+      {
+        id: 3,
+        url: "https://www.enix-power-solutions.com/wp-content/uploads/2022/03/Lithium-Manganese_Batteries_smaller.jpg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Lithium Cobalt Oxide",
+    des: "Manufactured from lithium carbonate and cobalt, these batteries are most commonly used in mobile phones, laptops, and other electronics. They are characterised by high specific energy, but they’re not the best when it comes to the life of the battery.",
+
+    image: [
+      {
+        id: 1,
+        url: "https://images.news18.com/webstories/2023/04/shutterstock_2169122499-scaled.jpg",
+      },
+      {
+        id: 2,
+        url: "https://images.news18.com/webstories/2023/04/shutterstock_2169122499-scaled.jpg",
+      },
+      {
+        id: 3,
+        url: "https://images.news18.com/webstories/2023/04/shutterstock_2169122499-scaled.jpg",
+      },
+    ],
+  },
+];
+
+// inverter data
+export const invertersData = [
+  {
+    id: 1,
+    title: "solar inverter",
+    des: " Specifically designed to convert DC power from solar panels into usable AC power vailable in various types (string inverters, microinverters, hybrid inverters)",
+
+    image: [
+      {
+        id: 1,
+        url: "./images/inverter.jpg",
+      },
+      {
+        id: 2,
+        url: "./images/inverter 2.jpg",
+      },
+      {
+        id: 3,
+        url: "./images/inverter 3.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: " solar inverter",
+    des: "A solar inverter is a key component of a solar power system that converts the direct current (DC) electricity generated by solar panels into alternating current (AC) electricity, which can be used to power household appliances, industrial equipment, or fed back into the power grid.",
+
+    image: [
+      {
+        id: 1,
+        url: "https://alladin.pk/cdn/shop/files/PrimaxVenus42002_570x.png?v=1704030653",
+      },
+      {
+        id: 2,
+        url: "https://alladin.pk/cdn/shop/files/PrimaxVenus42002_570x.png?v=1704030653",
+      },
+      {
+        id: 3,
+        url: "https://alladin.pk/cdn/shop/files/PrimaxVenus42002_570x.png?v=1704030653",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "batteries inverter",
+    des: "A battery inverter is a device that converts direct current (DC) electricity stored in batteries into alternating current (AC) electricity, which can be used to power appliances, devices, or even supply energy back to the grid.",
+    image: "https://www.bixpower.com/v/vspfiles/assets/images/XP2500-640.jpg",
+
+    image: [
+      {
+        id: 1,
+        url: "https://www.bixpower.com/v/vspfiles/assets/images/XP2500-640.jpg",
+      },
+      {
+        id: 2,
+        url: "https://www.bixpower.com/v/vspfiles/assets/images/XP2500-640.jpg",
+      },
+      {
+        id: 3,
+        url: "https://www.bixpower.com/v/vspfiles/assets/images/XP2500-640.jpg",
+      },
+    ],
+  },
+];
+
+// better
+export const batteriesData = [
+  {
+    id: 1,
+    title: "solar batteries",
+    des: "A solar battery is a system for storing the energy generated by your solar panels until such a time as you need to use that energy. Solar panels have been around for many years, but their main flaw has been that the energy they produce must be used when it is generated. ",
+    image: [
+      {
+        id: 1,
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkuLHUqcRFR9OZgzueq97hRhDBirlZYoiBpA&s",
+      },
+      {
+        id: 2,
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkuLHUqcRFR9OZgzueq97hRhDBirlZYoiBpA&s",
+      },
+      {
+        id: 3,
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkuLHUqcRFR9OZgzueq97hRhDBirlZYoiBpA&s",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: " lead acid battries",
+    des: "Traditional, widely-used batteries known for reliability and cost-effectiveness.",
+    image: [
+      {
+        id: 1,
+        url: "https://cdn.shopify.com/s/files/1/0476/5047/2086/files/mpr0031-en-What-is-a-lead-acid-battery.jpg?v=1653401462",
+      },
+      {
+        id: 2,
+        url: "https://cdn.shopify.com/s/files/1/0476/5047/2086/files/mpr0031-en-What-is-a-lead-acid-battery.jpg?v=1653401462",
+      },
+      {
+        id: 3,
+        url: "https://cdn.shopify.com/s/files/1/0476/5047/2086/files/mpr0031-en-What-is-a-lead-acid-battery.jpg?v=1653401462",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "lithium ion battries",
+    des: "High-performance batteries with long lifetimes and high energy density.",
+    image: [
+      {
+        id: 1,
+        url: "https://blog.storemasta.com.au/hs-fs/hubfs/Battery%20charge.jpeg?width=500&height=333&name=Battery%20charge.jpeg",
+      },
+      {
+        id: 2,
+        url: "https://blog.storemasta.com.au/hs-fs/hubfs/Battery%20charge.jpeg?width=500&height=333&name=Battery%20charge.jpeg",
+      },
+      {
+        id: 3,
+        url: "https://blog.storemasta.com.au/hs-fs/hubfs/Battery%20charge.jpeg?width=500&height=333&name=Battery%20charge.jpeg",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Sodium-Based Batteries",
+    des: "merging alternatives to lithium-ion, using abundant materials like sodium.",
+    image: [
+      {
+        id: 1,
+        url: "https://media.licdn.com/dms/image/D4E12AQFwwFS3mq8b8Q/article-cover_image-shrink_600_2000/0/1700600007770?e=2147483647&v=beta&t=5mQXCgxP2guMN6nWta1RGpoJ8lI7FHDm7yJxTGFsY1g",
+      },
+      {
+        id: 2,
+        url: "https://media.licdn.com/dms/image/D4E12AQFwwFS3mq8b8Q/article-cover_image-shrink_600_2000/0/1700600007770?e=2147483647&v=beta&t=5mQXCgxP2guMN6nWta1RGpoJ8lI7FHDm7yJxTGFsY1g",
+      },
+      {
+        id: 3,
+        url: "https://media.licdn.com/dms/image/D4E12AQFwwFS3mq8b8Q/article-cover_image-shrink_600_2000/0/1700600007770?e=2147483647&v=beta&t=5mQXCgxP2guMN6nWta1RGpoJ8lI7FHDm7yJxTGFsY1g",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Flow Batteries",
+    des: "long-duration energy storage solutions for grid-scale applications.",
+    image: [
+      {
+        id: 1,
+        url: "https://www.pv-magazine.com/wp-content/uploads/2020/03/Avalon-Flow-batteries-2-1200x801.jpg",
+      },
+      {
+        id: 2,
+        url: "https://www.pv-magazine.com/wp-content/uploads/2020/03/Avalon-Flow-batteries-2-1200x801.jpg",
+      },
+      {
+        id: 3,
+        url: "https://www.pv-magazine.com/wp-content/uploads/2020/03/Avalon-Flow-batteries-2-1200x801.jpg",
+      },
+    ],
+  },
+
+  {
+    id: 6,
+    title: "Nickel-Based Batteries",
+    des: "high-performance batteries with long lifetimes and high energy density.",
+
+    image: [
+      {
+        id: 1,
+        url: "https://3.imimg.com/data3/OT/TO/MY-4111430/vented-pocket-plate-nicad-batteries.jpg",
+      },
+      {
+        id: 2,
+        url: "https://3.imimg.com/data3/OT/TO/MY-4111430/vented-pocket-plate-nicad-batteries.jpg",
+      },
+      {
+        id: 3,
+        url: "https://3.imimg.com/data3/OT/TO/MY-4111430/vented-pocket-plate-nicad-batteries.jpg",
+      },
+    ],
   },
 ];
 

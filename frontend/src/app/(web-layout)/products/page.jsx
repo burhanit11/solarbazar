@@ -9,7 +9,6 @@ const Products = () => {
     <div className="md:flex xs:block z-0 ">
       <div className="md:w-[20%] xs:w-full relative bg-white h-[100vh] px-5 rounded-t-lg md:fixed ">
         {/* search box */}
-        {/* search box */}
         <div className="w-full my-5 relative">
           <input
             type="text"
@@ -43,7 +42,7 @@ const Products = () => {
             // style="border:0;"
             className="rounded-md"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <button className="btn w-full">Search</button>

@@ -15,6 +15,8 @@ import DropDown from "./DropDown";
 import Navbar from "./Navbar";
 import { categoriesData } from "@/static/data";
 import { useRouter } from "next/navigation";
+import Wishlist from "../Wishlist/Wishlist";
+import Cart from "../cart/Cart";
 
 const Header = ({ activeHeading }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,6 +24,8 @@ const Header = ({ activeHeading }) => {
   const [active, setActive] = useState(false);
   const [dropDown, setDropDown] = useState(false);
   const [open, setOpen] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
+  const [openWishlist, setOpenWishlist] = useState(false);
 
   const router = useRouter();
   useEffect(() => {
@@ -55,10 +59,10 @@ const Header = ({ activeHeading }) => {
 
   return (
     <>
-      <div className="xs:hidden md:flex md:h-[50px] md:py-12  md:flex items-center justify-between">
+      <div className="xs:hidden md:flex md:h-[50px] border-2  md:py-12  md:flex items-center justify-between">
         <div>
           <Link href="/">
-            <h1 className="text-5xl font-bold text-[#2ecc71] ">
+            <h1 className="text-5xl font-bold  ">
               Solar<span className="text-primary">Bazar</span>
             </h1>
           </Link>
@@ -110,7 +114,7 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } max-w-7xl  transition xs:hidden md:flex items-center md:justify-between w-full bg-secondary h-[70px]`}
+        }  transition xs:hidden md:flex items-center md:justify-between  w-full bg-secondary h-[70px]`}
       >
         {/* categories */}
         <div onClick={() => setDropDown(!dropDown)}>
@@ -135,7 +139,7 @@ const Header = ({ activeHeading }) => {
           </div>
         </div>
         {/* navitems */}
-        <div className={"flex items-center  "}>
+        <div className={"flex items-center "}>
           <Navbar active={activeHeading} />
         </div>
 
@@ -185,12 +189,10 @@ const Header = ({ activeHeading }) => {
           </div>
 
           {/* cart popup */}
-          {/* {openCart ? <Cart setOpenCart={setOpenCart} /> : null} */}
+          {openCart ? <Cart setOpenCart={setOpenCart} /> : null}
 
           {/* wishlist popup */}
-          {/* {openWishlist ? (
-              <Wishlist setOpenWishlist={setOpenWishlist} />
-            ) : null} */}
+          {openWishlist ? <Wishlist setOpenWishlist={setOpenWishlist} /> : null}
         </div>
       </div>
 

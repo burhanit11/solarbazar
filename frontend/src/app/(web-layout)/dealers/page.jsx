@@ -28,7 +28,7 @@ const Dealers = () => {
             // style="border:0;"
             className="rounded-md"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
         <button className="btn w-full">Search</button>

@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import styles from "@/styles/styles";
 import Link from "next/link";
+import ProductDetailsCard from "../ProductDetailsCard/ProductDetailsCard";
 
 const ProductCard = ({ data, isEvent }) => {
   const [click, setClick] = useState(false);

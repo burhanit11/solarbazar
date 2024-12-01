@@ -13,8 +13,6 @@ const signup = async (req, res) => {
 
     const avatarLocalPath = req.file?.path;
 
-    console.log(avatarLocalPath, "File");
-
     if (!avatarLocalPath) {
       return res.status(200).json({ message: "Avatar local path is missing." });
     }
@@ -30,8 +28,46 @@ const signup = async (req, res) => {
 
     res.status(200).json({ message: "User Register Success", data: user });
   } catch (error) {
-    res.status(200).json({ message: "Register Error", error });
+    res.status(403).json({ message: "Register Error", error });
   }
 };
 
-export { signup };
+const login = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(403).json({ message: "Please Provide All Fileds" });
+    }
+
+    const userExist = await User.findOne({ email });
+
+    if (!userExist) {
+      return res.status(403).json({ message: "Invalid email or password" });
+    }
+
+    const matchPassword = await userExist.comparePassword(password);
+
+    if (!matchPassword) {
+      return res.status(403).json({ message: "Invalid credentials" });
+    }
+
+    const token = await generateToken(userExist._id);
+
+    const user = await User.findById(userExist._id).select("-password");
+
+    const optons = {
+      httpOnly: true,
+      secure: true,
+    };
+
+    res
+      .status(200)
+      .cookie("token", token, optons)
+      .json({ message: "Login Success", user, token });
+  } catch (error) {
+    res.status(403).json({ message: "Login Error", error });
+  }
+};
+
+export { signup, login };
