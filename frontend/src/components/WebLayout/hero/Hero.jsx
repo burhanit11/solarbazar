@@ -16,7 +16,7 @@ const Hero = () => {
       <img
         className="h-[100vh] w-full relative z-0"
         src="https://media.istockphoto.com/id/2153491899/photo/modern-ecology-sun-energy-batteries-solar-panels-field-for-electricity.webp?a=1&b=1&s=612x612&w=0&k=20&c=YWcl75FmWLHA9OMfrkgb5t2BhCKfRb7PnL86IcZlV_c="
-        alt=""
+        alt="home_image"
       />
       <div
         className={`flex flex-col items-center md:pt-28  mx-auto w-[90%] 800px:w-[60%] absolute `}
