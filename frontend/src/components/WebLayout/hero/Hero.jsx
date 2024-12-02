@@ -9,7 +9,7 @@ const Hero = () => {
       className={`relative min-h-[100vh] md:min-h-[80vh] w-full bg-no-repeat ${styles.noramlFlex}`}
       style={{
         backgroundImage:
-          "url(https://www.researchgate.net/publication/337047327/figure/fig1/AS:822068576780288@1573007830610/Example-of-solar-energy-3.jpg)",
+          "url(https://www.elecnonewenergy.com/wp-content/themes/elecnopcwp/images/probanner.png)",
       }}
     >
       <div
