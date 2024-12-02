@@ -80,7 +80,7 @@ const Categories = () => {
         className={`${styles.section} bg-white gird grid-cols-3 p-6 rounded-lg mb-12`}
       > */}
 
-      <Grid container spacing={{ xs: 2, md: 3 }}>
+      <Grid container spacing={{ xs: 2, md: 3 }} sx={{ mt: 3 }}>
         {data.slice(0, 4).map((item, i) => (
           <Grid
             size={{ xs: 12, md: 6 }}
